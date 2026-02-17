@@ -36,5 +36,5 @@ flutter:
 
   module:
     androidX: true
-    androidPackage: com.movies.sys_ltd_movies_flutter
-    iosBundleIdentifier: com.movies.sysLtdMoviesFlutter
+    androidPackage: com.movies.sys_ltd_movies_android
+    iosBundleIdentifier: com.movies.sysLtdMoviesIos
