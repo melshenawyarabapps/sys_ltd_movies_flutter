@@ -274,7 +274,7 @@ MoviesState(
 ## 🔗 Related Repositories
 
 - [sys_ltd_movies_android](https://github.com/melshenawyarabapps/sys_ltd_movies_android.git) - Native Android host app
-- [sys_ltd_movies_ios](https://github.com/melshenawyarabapps/sys_ltd_movies_ios.git) - Native iOS host app
+- [sysLtdMoviesIos](https://github.com/melshenawyarabapps/sysLtdMoviesIos.git) - Native iOS host app
 
 ---
 
