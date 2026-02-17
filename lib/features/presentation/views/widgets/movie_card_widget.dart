@@ -71,9 +71,10 @@ class MovieCardWidget extends StatelessWidget {
 
   Future<void> _onMovieTap(int movieId) async {
     try {
-      await MethodChannel(
-        AppConstants.channelName,
-      ).invokeMethod(AppConstants.channelName, {'movieId': movieId});
-    } on PlatformException catch (_) {}
+      await const MethodChannel(AppConstants.channelName)
+          .invokeMethod(AppConstants.eventName, {'movieId': movieId});
+    } on PlatformException catch (_) {
+      // Platform channel communication failed - handled silently
+    }
   }
 }
