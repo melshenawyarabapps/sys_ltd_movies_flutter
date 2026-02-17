@@ -1,0 +1,16 @@
+{
+  "networkError": "الرجاء التحقق من اتصالك بالشبكة ومحاولة مرة أخرى",
+  "unexpectedError": "خطأ غير متوقع",
+  "sendTimeOutPleaseTryAgainLater": "يرجى إعادة المحاولة لاحقًا.",
+  "receiveTimeOutPleaseTryAgainLater": "يرجى المحاولة مرة أخرى فى وقت لاحق.",
+  "connectionErrorPleaseTryAgainLater": "خطأ فى الاتصال، يرجى المحاولة مرة أخرى لاحقًا.",
+  "requestHasBeenCancelledPleaseTryAgainLater": "تم إلغاء الطلب، يرجى المحاولة مرة أخرى لاحقًا.",
+  "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater": "عفوًا، حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا",
+  "popularMovies": "الأفلام الشائعة",
+  "noMoviesFound": "لم يتم العثور على أفلام.",
+  "retry": "إعادة المحاولة",
+  "back": "رجوع",
+  "loadingError": "فشل تحميل الصورة.",
+  "online": "متصل",
+  "offline": "غير متصل"
+}

@@ -1,0 +1,16 @@
+{
+  "networkError": "Network error occurred",
+  "unexpectedError": "An unexpected error occurred",
+  "sendTimeOutPleaseTryAgainLater": "Send timeout. Please try again later",
+  "receiveTimeOutPleaseTryAgainLater": "Receive timeout. Please try again later",
+  "connectionErrorPleaseTryAgainLater": "Connection error. Please try again later",
+  "requestHasBeenCancelledPleaseTryAgainLater": "Request cancelled. Please try again later",
+  "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater": "Oops! An unexpected error occurred. Please try again later",
+  "popularMovies": "Popular Movies",
+  "noMoviesFound": "No movies found.",
+  "retry": "Retry",
+  "back": "Back",
+  "loadingError": "Failed to load image.",
+  "online": "Online",
+  "offline": "Offline"
+}
