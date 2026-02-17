@@ -9,7 +9,7 @@ class MoviesRepositoryImpl implements MoviesRepository {
   final MoviesRemoteDataSource _remoteDataSource;
   final NetworkInfo _networkInfo;
 
-  MoviesRepositoryImpl(this._remoteDataSource, this._networkInfo);
+  const MoviesRepositoryImpl(this._remoteDataSource, this._networkInfo);
 
   @override
   Future<(List<Movie>, int)> getPopularMovies(int page) async {

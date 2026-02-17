@@ -6,6 +6,7 @@ import 'package:sys_ltd_movies_flutter/core/services/localization/localization_s
 import 'package:sys_ltd_movies_flutter/features/data/datasources/movies_remote_data_source.dart';
 import 'package:sys_ltd_movies_flutter/features/data/repositories/movies_repository_impl.dart';
 import 'package:sys_ltd_movies_flutter/features/domain/repositories/movies_repository.dart';
+import 'package:sys_ltd_movies_flutter/features/domain/usecases/get_popular_movies.dart';
 
 GetIt getIt = GetIt.instance;
 
@@ -29,5 +30,8 @@ void setUp() {
       getIt.get<MoviesRemoteDataSource>(),
       getIt.get<NetworkInfo>(),
     ),
+  );
+  getIt.registerLazySingleton<GetPopularMovies>(
+    () => GetPopularMovies(getIt.get<MoviesRepository>()),
   );
 }
