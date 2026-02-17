@@ -22,7 +22,7 @@ class CodegenLoader extends AssetLoader{
   "connectionErrorPleaseTryAgainLater": "Connection error. Please try again later",
   "requestHasBeenCancelledPleaseTryAgainLater": "Request cancelled. Please try again later",
   "oppsAnUnexpectedErrorOccurredPleaseTryAgainLater": "Oops! An unexpected error occurred. Please try again later",
-  "popular_movies": "Popular Movies",
+  "popularMovies": "Popular Movies",
   "noMoviesFound": "No movies found.",
   "retry": "Retry",
   "back": "Back",
