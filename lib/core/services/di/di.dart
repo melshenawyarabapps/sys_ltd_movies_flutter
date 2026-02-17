@@ -7,6 +7,7 @@ import 'package:sys_ltd_movies_flutter/features/data/datasources/movies_remote_d
 import 'package:sys_ltd_movies_flutter/features/data/repositories/movies_repository_impl.dart';
 import 'package:sys_ltd_movies_flutter/features/domain/repositories/movies_repository.dart';
 import 'package:sys_ltd_movies_flutter/features/domain/usecases/get_popular_movies.dart';
+import 'package:sys_ltd_movies_flutter/features/presentation/controllers/movies_bloc.dart';
 
 GetIt getIt = GetIt.instance;
 
@@ -33,5 +34,8 @@ void setUp() {
   );
   getIt.registerLazySingleton<GetPopularMovies>(
     () => GetPopularMovies(getIt.get<MoviesRepository>()),
+  );
+  getIt.registerFactory<MoviesBloc>(
+    () => MoviesBloc(getIt.get<GetPopularMovies>()),
   );
 }

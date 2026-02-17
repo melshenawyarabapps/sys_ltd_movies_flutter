@@ -36,7 +36,7 @@ packages:
   bloc:
     dependency: transitive
     description:
-      name: bloc
+      name: controllers
       sha256: a48653a82055a900b88cd35f92429f068c5a8057ae9b136d197b3d56c57efb81
       url: "https://pub.dev"
     source: hosted
