@@ -113,19 +113,3 @@ class NoInternetException extends AppException {
         fallbackMessage: 'No internet connection',
       );
 }
-
-class FailedToLoadException extends AppException {
-  const FailedToLoadException()
-    : super(
-        localeKey: LocaleKeys.loadingError,
-        fallbackMessage: 'Failed to load',
-      );
-}
-class UnknownException extends AppException {
-  const UnknownException()
-    : super(
-        localeKey: LocaleKeys.unexpectedError,
-        fallbackMessage: 'Unknown error occurred',
-      );
-}
-
