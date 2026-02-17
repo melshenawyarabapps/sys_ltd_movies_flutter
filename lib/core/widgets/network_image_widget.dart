@@ -10,6 +10,7 @@ class NetworkImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CachedNetworkImage(
       imageUrl: imageUrl,
+      fit: BoxFit.cover,
       placeholder: (_, _) => Icon(Icons.hourglass_empty),
       errorWidget: (_, _, _) => Icon(Icons.error_outline),
     );

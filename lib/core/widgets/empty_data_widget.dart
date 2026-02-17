@@ -5,11 +5,18 @@ import 'package:sys_ltd_movies_flutter/core/translations/locale_keys.g.dart';
 import 'package:sys_ltd_movies_flutter/core/utils/app_padding.dart';
 
 class EmptyDataWidget extends StatelessWidget {
-  const EmptyDataWidget({super.key, this.message, this.icon, this.iconSize});
+  const EmptyDataWidget({
+    super.key,
+    this.message,
+    this.icon,
+    this.iconSize,
+    this.onRetry,
+  });
 
   final String? message;
   final IconData? icon;
   final double? iconSize;
+  final VoidCallback? onRetry;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +38,14 @@ class EmptyDataWidget extends StatelessWidget {
               message ?? LocaleKeys.noMoviesFound.tr(),
               textAlign: TextAlign.center,
             ),
+            if (onRetry != null) ...[
+              16.verticalSpace,
+              ElevatedButton.icon(
+                onPressed: onRetry,
+                icon: const Icon(Icons.refresh),
+                label: Text(LocaleKeys.retry.tr()),
+              ),
+            ],
           ],
         ),
       ),
