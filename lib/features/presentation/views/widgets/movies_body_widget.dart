@@ -40,15 +40,16 @@ class _MoviesBodyWidgetState extends State<MoviesBodyWidget> {
           );
         }
         return switch (state.status) {
-          RequestStatus.loading => const LoadingWidget(),
+          RequestStatus.loading ||
+          RequestStatus.initial => const LoadingWidget(),
           RequestStatus.error => ErrorDisplayWidget(
-              message: state.errorMessage,
-              onRetry: _onRetry,
-            ),
+            message: state.errorMessage,
+            onRetry: _onRetry,
+          ),
           _ => EmptyDataWidget(
-              message: LocaleKeys.noMoviesFound.tr(),
-              onRetry: _onRetry,
-            ),
+            message: LocaleKeys.noMoviesFound.tr(),
+            onRetry: _onRetry,
+          ),
         };
       },
     );
